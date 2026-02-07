@@ -7,7 +7,7 @@
 - This example coincidentally uses the MailPace transactional email service.
 - Almost everything about this BetterAuth instance can be configured on `/src/lib/auth.ts`.
 
-# Project Directory Overview
+## Project Directory Overview
 - project root
   - `drizzle/` business files for Drizzle
   - `drizzle.config.ts` for drizzle-kit operations
@@ -23,16 +23,26 @@
 > Modifications to plugins on the serverside for `src/lib/auth.ts` requires
 > coordination with the clients under `src/client/*`.
 
-# Installation
+# Project Setup
+
 Make sure you have these dependencies:
 - `bun` runtime
 - 1Password and their `op` CLI tool
 
-## One-time initial setup
+## Installation
 
-> [!IMPORTANT]
-> This section requires that you've filled out the values in `.env` following
-> the example from `.env.example` or `.env.tpl`.
+Install dependencies.
+
+```bash
+bun install
+```
+
+Either manually populate `.env` following the example from `.env.tpl` or use the
+1Password tool `op`.
+
+```bash
+bun env
+```
 
 Push the schema to local or remote (!) depending on configuration, creating the
 sqlite file as long as the folder exists.
@@ -40,3 +50,13 @@ sqlite file as long as the folder exists.
 ```bash
 bunx drizzle-kit push
 ```
+
+# Using BetterAuth
+
+Although this project is meant as a prototype, if you wanted to use it then the
+client libraries are available in the `src/client/` directory.
+
+Then follow integration instructions such as this [Fastify example]. Basically
+you're going to route some requests to the BetterAuth hono instance.
+
+[Fastify example]: https://www.better-auth.com/docs/integrations/fastify
