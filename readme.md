@@ -35,7 +35,6 @@ Either manually fill in values in `.env` following the example from `.env.tpl`
 or use the 1Password tool `op`.
 
 ```bash
-# uses 1Password CLI tool
 bun env
 ```
 
