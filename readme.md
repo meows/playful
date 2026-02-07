@@ -23,16 +23,21 @@
 > Modifications to plugins on the serverside for `src/lib/auth.ts` requires
 > coordination with the clients under `src/client/*`.
 
-# Installation
+# Project Setup
+
 Make sure you have these dependencies:
 - `bun` runtime
 - 1Password and their `op` CLI tool
 
-## One-time initial setup
+## Installation
 
-> [!IMPORTANT]
-> This section requires that you've filled out the values in `.env` following
-> the example from `.env.example` or `.env.tpl`.
+Either manually fill in values in `.env` following the example from `.env.tpl`
+or use the 1Password tool `op`.
+
+```bash
+# uses 1Password CLI tool
+bun env
+```
 
 Push the schema to local or remote (!) depending on configuration, creating the
 sqlite file as long as the folder exists.
