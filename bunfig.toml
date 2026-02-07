@@ -1,0 +1,19 @@
+# ——————————————————————————————————————————————————————————————————————————————
+# Bun configuration
+# https://bun.sh/docs/runtime/bunfig
+
+telemetry = false
+
+# [install]
+# minimumReleaseAge = 604800 # 1 week
+# linker = "isolated" # https://bun.com/docs/install/isolated
+
+# https://www.npmjs.com/package/@socketsecurity/bun-security-scanner
+# [install.security]
+# provider = "@socketsecurity/bun-security-scanner"
+
+[console]
+depth = 4
+
+[run]
+bun = true

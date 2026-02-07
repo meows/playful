@@ -1,0 +1,29 @@
+{
+  "name": "@kit/playful",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch ./src/index.ts",
+    "env": "op inject -i .env.tpl -o .env",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "exports": {
+    "./client": "./src/client/index.ts"
+  },
+  "dependencies": {
+    "@better-auth/passkey": "^1.4.18",
+    "better-auth": "^1.4.18",
+    "drizzle-orm": "^0.45.1",
+    "drizzle-valibot": "^0.4.2",
+    "hono": "^4.11.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "valibot": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.8",
+    "@types/node": "^25.2.1",
+    "drizzle-kit": "^0.31.8"
+  }
+}
