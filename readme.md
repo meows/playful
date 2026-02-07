@@ -8,16 +8,16 @@
 - Almost everything about this BetterAuth instance can be configured on `src/lib/auth.ts`.
 
 ## Project Directory Overview
-- project root
-  - `drizzle/` business files for Drizzle
+- 📁 `/` project root
   - `drizzle.config.ts` for drizzle-kit operations
-- `src/` folder
-  - `client/` are clients for vanilla TypeScript, React, etc.
-  - `component/` are TSX components, such as for email templates
-  - `context/` are resources meant to shared via Hono context
-  - `db/` drizzle schema & db client
-  - `env/` internal and shared env files
-  - `lib/` I put the BetterAuth instance here because the docs said so but...
+  - 📁 `drizzle/` business files for Drizzle
+  - 📁 `src/` folder
+    - 📁 `client/` are clients for vanilla TypeScript, React, etc.
+    - 📁 `component/` are TSX components, such as for email templates
+    - 📁 `context/` are resources meant to shared via Hono context
+    - 📁 `db/` drizzle schema & db client
+    - 📁 `env/` internal and shared env files
+    - 📁 `lib/` I put the BetterAuth instance here because the docs said so but...
 
 > [!NOTE]
 > Modifications to plugins on the serverside for `src/lib/auth.ts` requires
