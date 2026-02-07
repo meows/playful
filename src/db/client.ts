@@ -24,7 +24,7 @@ sqlite.run(`PRAGMA journal_mode = WAL;`)
 // -----------------------------------------------------------------------------
 // Drizzle Client
 
-/** Drizzle client for backup service */
+/** Drizzle sqlite client. */
 export const client = drizzle({ client: sqlite, schema })
 
 export default client
