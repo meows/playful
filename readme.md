@@ -5,7 +5,7 @@
   storage layer, in this case I choose sqlite but one can switch around with a
   relatively straightforward translation.
 - This example coincidentally uses the MailPace transactional email service.
-- Almost everything about this BetterAuth instance can be configured on `/src/lib/auth.ts`.
+- Almost everything about this BetterAuth instance can be configured on `src/lib/auth.ts`.
 
 ## Project Directory Overview
 - project root
@@ -13,7 +13,7 @@
   - `drizzle.config.ts` for drizzle-kit operations
 - `src/` folder
   - `client/` are clients for vanilla TypeScript, React, etc.
-  - `component` are TSX components, such as for email templates
+  - `component/` are TSX components, such as for email templates
   - `context/` are resources meant to shared via Hono context
   - `db/` drizzle schema & db client
   - `env/` internal and shared env files
